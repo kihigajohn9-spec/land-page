@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pwani Roasters – Fresh Tanzanian coffee, delivered</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 1. HEADER: logo and navigation -->
+<header id="top">
+ <div class="wrap bar">
+  <a class="logo" href="#top">Pwani Roasters</a>
+  <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  <nav id="nav" aria-label="Main">
+   <ul>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#plan">Build your plan</a></li>
+    <li><a href="#faq">Questions</a></li>
+    <li><a class="btn sm" href="#join">Start my box</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main>
+ <!-- 2. HERO: headline, buttons, coffee cup -->
+ <section class="hero">
+  <div class="wrap">
+   <div>
+    <h1>Coffee roasted this week, at your door.</h1>
+    <p class="lead">We buy beans from smallholder farms around Kilimanjaro and Mbeya, roast them in Dar es Salaam, and deliver within 48 hours.</p>
+    <div class="cta-row">
+     <a class="btn" href="#plan">Build my plan</a>
+     <a class="btn ghost" href="#how">See how it works</a>
+    </div>
+   </div>
+   <div class="cup" aria-hidden="true"><i class="steam"></i><i class="steam"></i><i class="steam"></i><div class="mug"></div></div>
+  </div>
+ </section>
+
+ <!-- 3. HOW IT WORKS: three steps -->
+ <section id="how">
+  <div class="wrap">
+   <h2>From farm to cup in three steps</h2>
+   <ol class="steps">
+    <li><h3>Pick your roast and size</h3><p>Light, medium or dark, whole bean or ground for your brewer.</p></li>
+    <li><h3>We roast to order</h3><p>Your bag is roasted the day before it ships, never from stock.</p></li>
+    <li><h3>Pause or change anytime</h3><p>Skip a delivery, swap roasts, or cancel from your phone.</p></li>
+   </ol>
+  </div>
+ </section>
+
+ <!-- 4. PLAN BUILDER: roast, size, delivery, live price -->
+ <section id="plan" class="builder">
+  <div class="wrap grid2">
+   <div>
+    <h2>Build your plan</h2>
+    <fieldset><legend>Roast</legend><div class="opts" data-name="roast">
+     <input type="radio" name="roast" id="r1" value="Light"><label for="r1">Light</label>
+     <input type="radio" name="roast" id="r2" value="Medium" checked><label for="r2">Medium</label>
+     <input type="radio" name="roast" id="r3" value="Dark"><label for="r3">Dark</label></div></fieldset>
+    <fieldset><legend>Bag size</legend><div class="opts">
+     <input type="radio" name="size" id="s1" value="250" checked><label for="s1">250 g</label>
+     <input type="radio" name="size" id="s2" value="500"><label for="s2">500 g</label>
+     <input type="radio" name="size" id="s3" value="1000"><label for="s3">1 kg</label></div></fieldset>
+    <fieldset><legend>Delivery</legend><div class="opts">
+     <input type="radio" name="freq" id="f1" value="weekly"><label for="f1">Every week</label>
+     <input type="radio" name="freq" id="f2" value="fortnight" checked><label for="f2">Every 2 weeks</label>
+     <input type="radio" name="freq" id="f3" value="monthly"><label for="f3">Monthly</label></div></fieldset>
+   </div>
+   <div class="summary" aria-live="polite">
+    <p style="margin:0">Your plan</p>
+    <div class="price" id="price">TZS 24,000</div>
+    <p id="desc" style="margin:.4rem 0 1.4rem">Medium roast, 250 g, every 2 weeks</p>
+    <p id="save"><small></small></p>
+    <a class="btn" href="#join">Continue with this plan</a>
+   </div>
+  </div>
+ </section>
+
+ <!-- 5. FAQ: questions that open and close -->
+ <section id="faq">
+  <div class="wrap" style="max-width:760px">
+   <h2>Questions</h2>
+   <details><summary>Where do you deliver?</summary><p>Anywhere in Dar es Salaam within 48 hours. Arusha, Dodoma and Mwanza deliveries take 3 to 4 days.</p></details>
+   <details><summary>Can I skip or cancel?</summary><p>Yes. Skip a delivery or cancel up to 24 hours before roasting, with no fee.</p></details>
+   <details><summary>Which grind should I choose?</summary><p>Choose whole bean if you have a grinder. Otherwise tell us your brewer and we grind to match.</p></details>
+   <details><summary>How do I pay?</summary><p>M-Pesa, Tigo Pesa, Airtel Money or card. You are charged when each bag ships.</p></details>
+  </div>
+ </section>
+
+ <!-- 6. SIGNUP: email form -->
+ <section id="join" class="signup">
+  <div class="wrap">
+   <h2>Get your first bag this week</h2>
+   <p>Leave your email and we will send a link to finish your plan.</p>
+   <form id="form" novalidate>
+    <input type="email" id="email" placeholder="you@example.com" aria-label="Email address" required>
+    <button class="btn" type="submit">Send my link</button>
+   </form>
+   <p id="msg" role="status"></p>
+  </div>
+ </section>
+</main>
+
+<!-- 7. FOOTER -->
+<footer><div class="wrap"><span>© 2026 Pwani Roasters, Dar es Salaam</span><a href="#top">Back to top</a></div></footer>
+
+<!-- The script always goes last, just before </body> -->
+<script src="script.js"></script>
+</body>
+</html>
