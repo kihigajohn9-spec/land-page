@@ -116,3 +116,5 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
  nav .btn{width:auto}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+
